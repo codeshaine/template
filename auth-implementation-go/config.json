@@ -1,0 +1,43 @@
+{
+    "email_subsystem_url": "http://email-subsystem:9863/api/v1/email",
+    "postgres_url": "host=postgres port=5432 user=asvatthi password=Vp3zHcNwGxR7uY9a dbname=users sslmode=disable",
+    "server_port": 20000,
+    "jwt_key": "3hW8kL7oR1pY4sD9gZ2vX6cA5bN0mQ1jF8uH2iP5tE4rG7aK3nS6eU9cI4oY8",
+    "sender": "noreply@mail.asvatthi.com",
+    "reply_to": "noreply@mail.asvatthi.com",
+    "redirect_url": "http://localhost:5173/auth/setpassword",
+    "workdir": "/asvatthi/user-data",
+    "email_auth_token": "BV2hECrMnm4B#njM&opK",
+    "internal_auth_code": "7BkHvhEiceE0xzWWItFy",
+    "hash_cost": 10,
+    "limit": 100,
+    "oauth": {
+        "google": {
+            "client_id": "1095351108304-viim657eu0riq25eesgvgv5sqkendrt7.apps.googleusercontent.com",
+            "client_secret": "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",
+            "redirect_url": "http://localhost:5173/auth/callback",
+            "state": "google",
+            "scopes": ["https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"]
+        },
+        "github": {
+            "client_id": "Ov23limATXzQ5nT8yq0q",
+            "client_secret": "8846bac9c2a02a28e839617bc0c61377f824c5f9",
+            "redirect_url": "http://localhost:5173/auth/callback",
+            "state": "github",
+            "scopes": ["read:user","user:email"]
+        },
+        "gitlab": {
+            "client_id": "7042b10d253f7f4f8acb36ac99bdd1b3f26278870ad26282fb08c2ef3c833bec",
+            "client_secret": "gloas-809976dbf1dee86e87c178a5dbc7154bd4a6ecc1e03a844a6ad058cb135fbdfa",
+            "redirect_url": "http://localhost:5173/auth/callback",
+            "state": "gitlab",
+            "scopes": ["read_user","email"]
+        }
+    },
+    "cors": {
+        "origins": ["http://localhost:*" , "https://asvatthi.com"],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD"],
+        "headers": ["*"],
+        "allow_credentials": true
+    }
+}
